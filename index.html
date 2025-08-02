@@ -235,7 +235,8 @@ Esperar não é perder tempo — é confiar que o tempo dEle é melhor que o nos
         alert("Por favor, digite uma mensagem antes de enviar.");
         return;
       }
-    // const numero = "5599999999999"; // <-- coloque aqui o número do WhatsApp com DDI e DDD
+     const linkDoSite = "https://alexandre-dadalto.github.io/devocional/";
+      const mensagemFinal = texto + "\n\nVeja mais em: " + linkDoSite;
      const link = "https://wa.me/" + "?text=" + encodeURIComponent(texto);
      window.open(link, '_blank');
     }
@@ -265,4 +266,5 @@ function gerarOracao() {
 
 </body>
 </html>
+
 
