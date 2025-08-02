@@ -227,20 +227,22 @@ Esperar não é perder tempo — é confiar que o tempo dEle é melhor que o nos
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
     Enviar pelo WhatsApp
   </button>  
-      <script>
-    function enviarWhatsApp() {
-      const texto = document.getElementById("mensagem").value.trim();
+     <script>
+  function enviarWhatsApp() {
+    const texto = document.getElementById("mensagem").value.trim();
 
-      if (texto === "") {
-        alert("Por favor, digite uma mensagem antes de enviar.");
-        return;
-      }
-     const linkDoSite = "https://alexandre-dadalto.github.io/devocional/";
-      const mensagemFinal = texto + "\n\nVeja mais em: " + linkDoSite;
-     const link = "https://wa.me/" + "?text=" + encodeURIComponent(texto);
-     window.open(link, '_blank');
+    if (texto === "") {
+      alert("Por favor, digite uma mensagem antes de enviar.");
+      return;
     }
-  </script>
+
+    const linkDoSite = "https://alexandre-dadalto.github.io/devocional/";
+    const mensagemFinal = texto + "\n\nVeja mais em: " + linkDoSite;
+
+    const link = "https://wa.me/?text=" + encodeURIComponent(mensagemFinal);
+    window.open(link, '_blank');
+  }
+</script>
   </div>
 <!-- -->
   <!--<div class="compartilhar">
@@ -266,5 +268,6 @@ function gerarOracao() {
 
 </body>
 </html>
+
 
 
